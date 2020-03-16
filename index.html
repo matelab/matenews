@@ -17,28 +17,30 @@
             class="search-input"
             value="{{ .SearchKey }}"
             placeholder="Enter a news topic"
-            type="search"
+            type="Buscar"
             name="q"
           />
         </form>
         <a
-          href="https://github.com/jpromanonet/newsDemoWithGo"
+          href="https://github.com/matelab/matenews"
           class="button
       github-button"
-          >View on Github</a
+          >Ver en Github</a
         >
       </header>
       <section class="container">
         <div class="result-count">
           {{ if (gt .Results.TotalResults 0)}}
           <p>
-            About <strong>{{ .Results.TotalResults }}</strong> results were
-            found. You are on page <strong>{{ .CurrentPage }}</strong> of
+            Aproximadamente <strong>{{ .Results.TotalResults }}</strong> fueron
+            encontrador, estas en la página
+            <strong>{{ .CurrentPage }}</strong> of
             <strong> {{ .TotalPages }}</strong>.
           </p>
-          {{ else if (ne .SearchKey "") and (eq .Results.TotalResults 0) }}
+          {{ else if (ne .SearchKey "") y (eq .Results.TotalResults 0) }}
           <p>
-            No results found for your query: <strong>{{ .SearchKey }}</strong>.
+            No encontramos nada para tu busqueda de:
+            <strong>{{ .SearchKey }}</strong>.
           </p>
           {{ end }}
         </div>
