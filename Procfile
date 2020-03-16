@@ -1,0 +1,1 @@
+web: bin/matenews -apikey $NEWS_API_KEY
