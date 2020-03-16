@@ -37,7 +37,7 @@
             <strong>{{ .CurrentPage }}</strong> of
             <strong> {{ .TotalPages }}</strong>.
           </p>
-          {{ else if (ne .SearchKey "") y (eq .Results.TotalResults 0) }}
+          {{ else if (ne .SearchKey "") and (eq .Results.TotalResults 0) }}
           <p>
             No encontramos nada para tu busqueda de:
             <strong>{{ .SearchKey }}</strong>.
