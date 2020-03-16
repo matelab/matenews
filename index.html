@@ -34,7 +34,7 @@
           <p>
             Aproximadamente <strong>{{ .Results.TotalResults }}</strong> resultados fueron
             encontrados, estas en la página
-            <strong>{{ .CurrentPage }}</strong> de
+            <strong>{{ .CurrentPage }}</strong> of
             <strong> {{ .TotalPages }}</strong>.
           </p>
           {{ else if (ne .SearchKey "") and (eq .Results.TotalResults 0) }}
