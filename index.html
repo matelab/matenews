@@ -32,9 +32,9 @@
         <div class="result-count">
           {{ if (gt .Results.TotalResults 0)}}
           <p>
-            Aproximadamente <strong>{{ .Results.TotalResults }}</strong> fueron
-            encontrador, estas en la página
-            <strong>{{ .CurrentPage }}</strong> of
+            Aproximadamente <strong>{{ .Results.TotalResults }}</strong> resultados fueron
+            encontrados, estas en la página
+            <strong>{{ .CurrentPage }}</strong> de
             <strong> {{ .TotalPages }}</strong>.
           </p>
           {{ else if (ne .SearchKey "") and (eq .Results.TotalResults 0) }}
